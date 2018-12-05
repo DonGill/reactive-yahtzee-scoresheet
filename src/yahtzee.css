@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(170, 170, 170);
+}
+
+button {
+  background-color: rgb(143, 197, 93);
+  border: none;
+  color: white;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+.yahtzee-game {
+  text-align: center;
+  background-color: darkturquoise;
+  min-height: 50vh;
+  padding: 2%;
+  margin: 2%;
+  width: 600px;
+}
+
+.yahtzee-game>h1 {
+  font-size: 20;
+}
+
+.dice-row {
+  display: grid;
+  grid-template-columns: 100px 100px 100px auto auto;
+  padding: 3px 6px 3px 6px;
+  font-size: 40px;
+  vertical-align: initial;
+}
+
+.dice-row>div {
+  background-color: rgb(238, 236, 133);
+  vertical-align: middle;
+  padding-top:10px;
+}
+
+.dice-row>img {
+  height: 75px;
+}
+
+.singleDiceScoreSection {
+  display: grid;
+  grid-template-columns: auto 100px;
+  background-color: tomato;
+  padding:5px;
+  margin: 5px;
+  vertical-align: initial;
+  font-size: 20pt;
+  text-align: right;
+}
+
