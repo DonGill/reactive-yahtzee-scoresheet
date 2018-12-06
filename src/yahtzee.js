@@ -18,32 +18,34 @@ class Yahtzee extends Component {
                 {
                     fValue: 1,
                     count: 0,
-                    rValue: 0
+                    name: 'Aces'
                 },
                 {
                     fValue: 2,
                     count: 0,
-                    rValue: 0
+                    name: 'Twos'
                 },
                 {
                     fValue: 3,
                     count: 0,
-                    rValue: 0
+                    name: 'Threes'
                 },
                 {
                     fValue: 4,
                     count: 0,
-                    rValue: 0
+                    name: 'Fours'
                 },
                 {
                     fValue: 5,
                     count: 0,
-                    rValue: 0
+                    name: 'Fives'
+                   
                 },
                 {
                     fValue: 6,
                     count: 0,
-                    rValue: 0
+                    name: 'Sixes'
+                  
                 }
             ]
         });

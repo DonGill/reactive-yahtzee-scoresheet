@@ -1,11 +1,12 @@
 # About
-The Reactive Yahtzee Scoresheet is a personal playground application to learn ReactJS.
+The Reactive Yahtzee Scoresheet project is a personal playground application to learn ReactJS. I am adding functionality as I learn new concepts. 
 
 ## Current Functionality
- - rendering the single dice and single dice score component sections.
+ - (12/5/2018) - rendering the single dice and single dice score component sections.
 
 
-## Hitlist 
+## Hitlist
+ - update single dice section to mimic original yahtzee scoresheet (just black lines on a white background.
  - render lower score section
  - render game grand total
  - implement multiple yahtzee bonuses

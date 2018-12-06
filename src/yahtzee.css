@@ -5,52 +5,79 @@ body {
     monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(170, 170, 170);
+  background-color: darkturquoise;
 }
 
 button {
   background-color: rgb(143, 197, 93);
-  border: none;
   color: white;
-  width: 75px;
-  height: 75px;
-  text-align: center;
-  font-size: 40px;
+  width: 45%;
+  height: 45px;
+  font-size: 20pt;
   cursor: pointer;
-  border-radius: 8px;
-  vertical-align: middle;
-  margin: 10px;
+  border:none;
+  margin: 2px;
 }
 
 .yahtzee-game {
-  text-align: center;
-  background-color: darkturquoise;
-  min-height: 50vh;
+  background-color: whitesmoke;
   padding: 2%;
   margin: 2%;
-  width: 600px;
+  border-style: double;
+  border-width: 10px 10px 10px 10px;
+  width: 500px;
+  margin-left: auto;
+  margin-right:auto;
 }
 
 .yahtzee-game>h1 {
-  font-size: 20;
+  font-size: 20pt;
 }
 
 .dice-row {
+  font-size: 10pt;
   display: grid;
-  grid-template-columns: 100px 100px 100px auto auto;
-  padding: 3px 6px 3px 6px;
-  font-size: 40px;
-  vertical-align: initial;
+  grid-template-columns: 150px 100px auto 50px 50px;
+  border:1px solid black;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+ background-color:white;
 }
 
-.dice-row>div {
-  background-color: rgb(238, 236, 133);
+.dice-row-label {
+  display:grid;
+  grid-template-columns: 50px 60px 40px;
   vertical-align: middle;
-  padding-top:10px;
+  margin-left:5px;
+}
+.dice-row-howto{
+  font-size: 8pt;
+  margin-left: 5px;
 }
 
-.dice-row>img {
-  height: 75px;
+.dice-row-label>div>p {
+  display: grid;
+  vertical-align: middle;
+}
+
+.dice-row-label>div>p>image {
+  width: 40px;
+  position: relative;
+  bottom:9px;
+}
+
+.dice-row-counts{
+  margin-top:10px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18pt;
+}
+
+.bump{
+  margin-right:11px;
+  font-weight: bold;
+  color:white;
 }
 
 .singleDiceScoreSection {
@@ -58,9 +85,8 @@ button {
   grid-template-columns: auto 100px;
   background-color: tomato;
   padding:5px;
-  margin: 5px;
   vertical-align: initial;
-  font-size: 20pt;
+  font-size: 18pt;
   text-align: right;
 }
 

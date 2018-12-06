@@ -26,11 +26,11 @@ class SingleDiceScore extends Component {
         return (
             <div className='singleDiceScoreSection'>
                 <div>Total Score:</div>
-                <div>{subTotal}</div>
+                <div className='bump'>{subTotal}</div>
                 <div>Bonues Score: </div>
-                <div>{bonusScore}</div>
+                <div className='bump'>{bonusScore}</div>
                 <div>Upper Section Total: </div> 
-                <div>{upperTotal}</div>
+                <div className='bump'>{upperTotal}</div>
             </div>
         );
     }
