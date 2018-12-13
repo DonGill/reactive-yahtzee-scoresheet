@@ -34,6 +34,26 @@ button {
   font-size: 20pt;
 }
 
+.combo-row{
+  font-size: 10pt;
+  display: grid;
+  grid-template-columns: 150px 100px auto;
+  border:1px solid black;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color:white;
+}
+
+.combo-row-item{
+  margin-left:5px;
+}
+
+.combo-row-input{
+  font-size: 24pt;
+  text-align: right;
+}
+
 .dice-row {
   font-size: 10pt;
   display: grid;
@@ -51,10 +71,6 @@ button {
   vertical-align: middle;
   margin-left:5px;
 }
-.dice-row-howto{
-  font-size: 8pt;
-  margin-left: 5px;
-}
 
 .dice-row-label>div>p {
   display: grid;
@@ -65,6 +81,11 @@ button {
   width: 40px;
   position: relative;
   bottom:9px;
+}
+
+.dice-row-howto{
+  font-size: 8pt;
+  margin-left: 5px;
 }
 
 .dice-row-counts{
@@ -84,9 +105,18 @@ button {
   display: grid;
   grid-template-columns: auto 100px;
   background-color: tomato;
-  padding:5px;
+  padding:0px;
   vertical-align: initial;
   font-size: 18pt;
   text-align: right;
 }
 
+.grandTotalsSection {
+  display: grid;
+  grid-template-columns: auto 100px;
+  background-color: tomato;
+  padding:0px;
+  vertical-align: initial;
+  font-size: 18pt;
+  text-align: right;
+}

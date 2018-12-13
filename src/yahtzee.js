@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import SingleDiceSection from './components/singleDiceSection.js';
-import './yahtzee.css';
 import SingleDiceSectionScore from './components/singleDiceScore.js';
+import CombinationSection from './components/comboSection';
+import './yahtzee.css';
+
 
 class Yahtzee extends Component {
     constructor() {
         super();
         this.state = {
-            uScores: [] //initialize to an empty array of uScore objects
+            
         }
     }
 
@@ -47,6 +49,39 @@ class Yahtzee extends Component {
                     name: 'Sixes'
                   
                 }
+            ],
+            lowerScores: [
+                {
+                    name: '3 of a kind',
+                    description: 'Score total of all 5 dice',
+                    score: 19
+                },
+                {
+                    name: '4 of a kind',
+                    description: 'Score total of all 5 dice',
+                    score:13
+                },
+                {
+                    name: 'Full House',
+                    description: 'SCORE 25',
+                    score: 14
+                },
+                {
+                    name: 'Small straight',
+                    description: 'SCORE 30',
+                    score: 6
+                },
+                {
+                    name: 'YAHTZEE',
+                    description: 'SCORE 50',
+                    score: 0
+                },
+                {
+                    name: 'Chance',
+                    description: 'Score total of all 5 dice',
+                    score: 0
+                }
+
             ]
         });
     }
@@ -103,12 +138,14 @@ class Yahtzee extends Component {
          }
     }
 
+
     render() {
         return (
             <div className="yahtzee-game">
                 <h1>Reactive-Yahtzee Scoresheet</h1>
                 <SingleDiceSection aDiceCount={this.handleAddDiceCount.bind(this)} dDiceCount={this.handleDecrDiceCount.bind(this)} uScores={this.state.uScores} />
                 <SingleDiceSectionScore uScores={this.state.uScores} />
+                <CombinationSection lScores={this.state.lowerScores} uScores={this.state.uScores} />
             </div>
         );
     }
